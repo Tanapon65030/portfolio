@@ -1,25 +1,44 @@
-import logo from './logo.svg';
-import './App.css';
 
-function App() {
+import React from "react";
+
+import { Button, ConfigProvider } from "antd";
+
+import { Anchor } from "./components";
+import { ANCHOR_ITEMS } from "./utils/anchor-items";
+
+import Home from "./pages/Home";
+import AboutMe from "./pages/AboutMe";
+import Education from "./pages/Education";
+import Projects from "./pages/Projects";
+import Experiences from "./pages/Experiences";
+import Skills from "./pages/Skills";
+import Contact from "./pages/Contact";
+
+
+import "./App.css";
+
+const App = () => {
   return (
-    <div className="App">
-      <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
-        <p>
-          Edit <code>src/App.js</code> and save to reload.
-        </p>
-        <a
-          className="App-link"
-          href="https://reactjs.org"
-          target="_blank"
-          rel="noopener noreferrer"
+    <ConfigProvider
+            theme={{
+                components: {
+                    Anchor: { colorSplit: "transparent" },
+                },
+            }}
         >
-          Learn React
-        </a>
-      </header>
-    </div>
+            <Home />
+            <Anchor items={ANCHOR_ITEMS}>
+                 
+                <AboutMe />
+                <Education />
+                <Projects />
+                <Experiences />
+                <Skills />
+                <Contact />
+                <br/><br/>
+            </Anchor>
+        </ConfigProvider>
   );
-}
+};
 
 export default App;

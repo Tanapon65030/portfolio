@@ -1,0 +1,29 @@
+.ant-anchor-ink {
+    background-color: transparent !important;
+}
+
+.ant-anchor-link {
+    padding-inline: var(--spacer3) !important;
+}
+
+.ant-anchor-link>a.ant-anchor-link-title {
+    color: var(--color-secondary) !important;
+    text-decoration: none;
+}
+
+.ant-anchor-link>a.ant-anchor-link-title:hover {
+    color: var(--color-primary-hover) !important;
+    text-decoration: none;
+    transform: translateY(-3px);
+}
+
+.ant-anchor-link>a.ant-anchor-link-title:active {
+    color: var(--color-primary-active) !important;
+    text-decoration: none;
+    transform: translateY(-1px);
+}
+
+.ant-anchor-link-active>a.ant-anchor-link-title-active {
+    color: var(--color-secondary) !important;
+    text-decoration: none;
+}

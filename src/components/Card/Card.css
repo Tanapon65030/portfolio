@@ -1,0 +1,130 @@
+.ant-card-bordered {
+    width: 100%;
+    height: 100%;
+    border-color: var(--color-secondary) !important;
+    background-color: var(--color-white) !important;
+    box-shadow: 6px 6px 0px var(--color-secondary);
+    transition: 0.3s;
+}
+
+.ant-card-bordered:hover {
+    border-color: var(--color-primary) !important;
+    box-shadow: 6px 6px 0px var(--color-primary);
+}
+
+.ant-card-head-wrapper {
+    align-items: baseline !important;
+}
+
+.ant-card-head {
+    margin: var(--spacer0) !important;
+    padding: var(--spacer3) var(--spacer4) !important;
+    border-color: var(--color-secondary) !important;
+    background-color: var(--color-white) !important;
+}
+
+.ant-card-bordered:hover .ant-card-head {
+    border-color: var(--color-primary) !important;
+}
+
+.ant-card-head-title {
+    white-space: normal !important;
+}
+
+.ant-card-extra {
+    width: 200px;
+    text-align: end;
+}
+
+.ant-card-cover {
+    margin-top: initial !important;
+    margin-inline-start: initial !important;
+    margin-inline-end: initial !important;
+    height: 250px;
+}
+
+.ant-card-cover>img {
+    height: 100%;
+    object-fit: cover;
+}
+
+.ant-card-body {
+    padding: var(--spacer3) var(--spacer4) !important;
+}
+
+.ant-card-body ul {
+    margin-left: var(--spacer4) !important;
+}
+
+.ant-card-body ul li:not(:last-child) {
+    margin-bottom: var(--spacer1) !important;
+}
+
+.card-project {
+    display: flex !important;
+    flex-direction: column;
+}
+
+.card-project .ant-card-body {
+    flex: 1;
+}
+
+.card-project .ant-card-actions li span .anticon {
+    font-size: var(--font-large) !important;
+    color: var(--color-primary) !important;
+}
+
+.card-project .ant-card-actions li:hover span .anticon {
+    color: var(--color-primary-hover) !important;
+}
+
+.card-project .ant-card-actions li:active span .anticon {
+    color: var(--color-primary-active) !important;
+}
+
+.card-contact,
+.card-contact:hover {
+    border-color: var(--color-secondary) !important;
+    box-shadow: none;
+}
+
+.card-contact .ant-card-body {
+    padding: var(--spacer3) var(--spacer4) var(--spacer1) !important;
+}
+
+.card-contact .list-info-link {
+    display: flex;
+    padding: var(--spacer3) 0;
+    border-top: 1px solid var(--color-secondary);
+    color: var(--color-default);
+    text-decoration: none;
+    cursor: pointer;
+}
+
+.card-contact .list-info-link span.anticon {
+    position: relative;
+    top: 3px;
+    margin-bottom: auto;
+    font-size: var(--font-title);
+    color: var(--color-primary);
+}
+
+.card-contact .list-info-link span.anticon:first-child {
+    margin-right: var(--spacer2);
+}
+
+.card-contact .list-info-link span.anticon:last-child {
+    margin-left: var(--spacer2);
+}
+
+.card-contact .list-info-link:hover,
+.card-contact .list-info-link:hover span.anticon:last-child {
+    color: var(--color-primary-hover);
+    text-decoration: none;
+}
+
+.card-contact .list-info-link:active,
+.card-contact .list-info-link:active span.anticon:last-child {
+    color: var(--color-primary-active);
+    text-decoration: none;
+}
