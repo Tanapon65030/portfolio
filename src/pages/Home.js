@@ -2,19 +2,19 @@ import { ArrowDownOutlined } from "@ant-design/icons";
 import Fade from "react-reveal/Fade";
 
 import { Button } from "../components";
-import { flexibleHeight } from "../utils/script";
+import { useFlexibleHeight } from "../utils/script";
 
 function Home() {
     return (
         <>
-            <div id="section-home" style={{ height: `${flexibleHeight()}px` }}>
+            <div id="section-home" style={{ height: `${useFlexibleHeight()}px` }}>
                 <div className="bg-home">
                     <div className="container">
                         <Fade bottom distance="10%">
                             <div
                                 className="d-flex flex-column justify-content-center align-items-center pt-20pc text-center"
                                 style={{
-                                    height: `${flexibleHeight() - 180}px`,
+                                    height: `${useFlexibleHeight() - 180}px`,
                                 }}
                             >
                                 <p className="mb-1 font-bold text-uppercase">

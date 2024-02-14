@@ -13,14 +13,14 @@ function Education() {
   const ResumeFileDownload = () => {
     const downloadLink = document.createElement("a");
     downloadLink.href = Resume;
-    downloadLink.download = "Resume.png";
+    downloadLink.download = "Resume.pdf";
     downloadLink.click();
   };
 
   const TranscriptFileDownload = () => {
     const downloadLink = document.createElement("a");
     downloadLink.href = Transcript;
-    downloadLink.download = "Transcript.png";
+    downloadLink.download = "Transcript.pdf";
     downloadLink.click();
   };
 

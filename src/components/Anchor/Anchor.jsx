@@ -2,7 +2,7 @@ import { Affix, Anchor, Col, Row } from "antd";
 
 import "./Anchor.css";
 
-import { flexibleHeight } from "../../utils/script";
+import { useFlexibleHeight } from "../../utils/script";
 
 const AnchorLink = ({ children, items }) => {
     const handleClickScroll = (e, data) => {
@@ -18,7 +18,7 @@ const AnchorLink = ({ children, items }) => {
         <div id="section-resume" className="container mt-36 mt-xs-12 w-100">
             <Row>
                 <Col xs={0} sm={0} md={6}>
-                    <Affix offsetTop={flexibleHeight() / 4}>
+                    <Affix offsetTop={useFlexibleHeight() / 4}>
                         <Anchor
                             onClick={handleClickScroll}
                             items={items}
