@@ -19,17 +19,14 @@ function AboutMe() {
                 😶 Who am <span className="color-primary">I</span>?
               </h2>
               <p className="mb-2 indent-4">
-                Hello! I'm Tanapon Sakulphetaram (Boom), a person who started my
-                journey into the world of{" "}
-                <span className="font-bold">Frontend development</span>. With a
-                passion for coding and creating user-friendly interfaces. So I
-                was keen to apply my skills in the digital world.
+                Hello! I'm Tanapon Sakulphetaram (Boom), who started the journey into the world of {" "}
+                <span className="font-bold">development</span>. With a passion for coding and creating user-friendly interfaces. So I was keen to put my skills to use in the digital world.
               </p>
               <p className="indent-4">
                 I'm interested in{" "}
                 <span className="color-primary font-bold">
-                  Backend Developer, Frontend Developer, Full-stack Developer,
-                  Mobile Developer.
+                  Full-stack Developer,
+                  Mobile Developer, IoT.
                 </span>{" "}
                 Now I'm preparing to find an internship. That will help me
                 develop my skills and learn new things
