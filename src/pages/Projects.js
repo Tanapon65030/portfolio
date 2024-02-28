@@ -6,6 +6,7 @@ import Fade from "react-reveal/Fade";
 
 import portfolioImg from "../assets/images/Resume.png";
 import Food from "../assets/images/Food.png";
+import td from "../assets/images/3d.png";
 
 import { Card, Tag } from "../components";
 
@@ -43,10 +44,7 @@ function Projects() {
           <Col xs={24} sm={24} md={24} lg={12}>
             <Card
               cover={
-                <img
-                  alt="Tanapon Portfolio Project Image"
-                  src={portfolioImg}
-                />
+                <img alt="Tanapon Portfolio Project Image" src={portfolioImg} />
               }
               actions={[
                 <a
@@ -100,8 +98,42 @@ function Projects() {
               <div>
                 <div className="font-title font-bold">Food Application</div>
                 <div className="mt-1 font-small">
-                  &nbsp; MiniProject in Mobile app development course in the classroom There is
-                  a menu bar for logging in, displaying products, and ordering.
+                  &nbsp; MiniProject in Mobile app development course in the
+                  classroom There is a menu bar for logging in, displaying
+                  products, and ordering.
+                </div>
+              </div>
+            </Card>
+          </Col>
+          <Col xs={24} sm={24} md={24} lg={12}>
+          <Card
+              cover={
+                <img alt="Tanapon Portfolio Project Image" src={td} />
+              }
+              actions={[
+                <a
+                  href="https://github.com/Tanapon65030/portfolio"
+                  target="_blank"
+                >
+                  <GithubOutlined key="github" />
+                </a>,
+              ]}
+              className="card-project"
+            >
+              <div className="mb-2">
+                <Space size={[0, 8]} wrap>
+                  <Tag>Arduino IDE</Tag>
+                  <Tag>C/C++</Tag>
+                </Space>
+              </div>
+              <div>
+                <div className="font-title font-bold">
+                  Filament Production Machine for 3D Printing
+                </div>
+                <div className="mt-1 font-small">
+                  &nbsp; It is a project that uses Microcontroller ESP32
+                  connects to sensors to work together automatically. and
+                  control the temperature as well PID control
                 </div>
               </div>
             </Card>

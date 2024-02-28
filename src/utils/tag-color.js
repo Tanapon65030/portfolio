@@ -34,6 +34,8 @@ const tagColor = (children, color = "#EE7999") => {
                 return "#106DAF";
         case "Dart":
             return "#41B883";
+        case "C/C++":
+            return "#41B883";
         default:
             return color;
     }

@@ -24,7 +24,7 @@ function Skills() {
                             </div>
                             <div className="mb-3">
                                 <Space size={[0, 8]} wrap>
-                                    <Tag color="#f50">C++</Tag>
+                                    <Tag color="#f50">C/C++</Tag>
                                     <Tag color="#2db7f5">JAVA</Tag>
                                     <Tag color="#87d068">Javascript</Tag>
                                     <Tag color="#108ee9">HTML/CSS</Tag>
