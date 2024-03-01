@@ -5,6 +5,11 @@
   box-sizing: border-box;
 }
 
+.centered-buttons {
+  display: flex;
+  justify-content: center;
+}
+
 /* import font */
 @font-face {
   font-family: 'Graphik';

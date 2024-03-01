@@ -5,6 +5,8 @@ import Fade from "react-reveal/Fade";
 import { Button, Modal, Carousel } from "antd";
 import { EyeOutlined, DownloadOutlined} from "@ant-design/icons";
 
+import "../App.css";
+
 import kmutnbLogo from "../assets/images/logo_kmutnb.png";
 import stcLogo from "../assets/images/logo_stc.png";
 import Resume from "../assets/images/Resume.pdf";
@@ -53,7 +55,7 @@ function Education() {
             <img
               className="logo-cmu"
               src={kmutnbLogo}
-              alt="Chiang Mai University Logo"
+              alt="KMUTNB Logo"
             />
           </div>
           <div>
@@ -71,7 +73,7 @@ function Education() {
             <img
               className="logo-cmu"
               src={stcLogo}
-              alt="Chiang Mai University Logo"
+              alt="STC Logo"
             />
           </div>
           <div>
@@ -87,7 +89,7 @@ function Education() {
       </Fade>
       <br />
       <br />
-      <div className="d-flex">
+      <div className="centered-buttons">
         <Button
           type="primary"
           shape="round"
