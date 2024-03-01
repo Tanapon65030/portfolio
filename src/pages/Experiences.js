@@ -10,10 +10,9 @@ import Experiences5 from "../assets/images/5.png";
 import Experiences6 from "../assets/images/6.png";
 import Experiences7 from "../assets/images/7.png";
 import Experiences8 from "../assets/images/8.png";
-import Experiences9 from "../assets/images/9.png";
 import Experiences10 from "../assets/images/10.png";
 
-import { Card, Tag } from "../components";
+import { Card} from "../components";
 
 function Experiences() {
   useEffect(() => {
@@ -49,7 +48,7 @@ function Experiences() {
           <Col span={24}>
             <Card
               cover={
-                <img alt="Tanapon Portfolio Project Image" src={Experiences4} />
+                <img alt="National Vocational Skills Competition" src={Experiences4} />
               }
               className="card-project"
             >
@@ -73,7 +72,7 @@ function Experiences() {
                       Competition. Write code to connect to IoT and various
                       sensors. with maximum efficiency and with minimal defects.
                     </li>
-                    <li>Microcontroller Theory Exam and C Language Exam.</li>
+                    <li>Microcontroller Theory Exam and C/C++ Language Exam.</li>
                   </ul>
                 </div>
               </div>
@@ -82,7 +81,7 @@ function Experiences() {
           <Col span={24}>
             <Card
               cover={
-                <img alt="Tanapon Portfolio Project Image" src={Experiences2} />
+                <img alt="Regional Vocational Skills Competition1" src={Experiences2} />
               }
               className="card-project"
             >
@@ -106,7 +105,7 @@ function Experiences() {
                       competition. Write code to solve problems efficiently and
                       with minimal defects.
                     </li>
-                    <li>Microcontroller Theory Exam and C Language Exam.</li>
+                    <li>Microcontroller Theory Exam and C/C++ Language Exam.</li>
                   </ul>
                 </div>
               </div>
@@ -115,7 +114,7 @@ function Experiences() {
           <Col span={24}>
             <Card
               cover={
-                <img alt="Tanapon Portfolio Project Image" src={Experiences3} />
+                <img alt="Regional Vocational Skills Competition2" src={Experiences3} />
               }
               className="card-project"
             >
@@ -139,7 +138,7 @@ function Experiences() {
                       competition. Write code to solve problems efficiently and
                       with minimal defects.
                     </li>
-                    <li>Microcontroller Theory Exam and C Language Exam.</li>
+                    <li>Microcontroller Theory Exam and C/C++ Language Exam.</li>
                   </ul>
                 </div>
               </div>
@@ -148,7 +147,7 @@ function Experiences() {
           <Col span={24}>
             <Card
               cover={
-                <img alt="Tanapon Portfolio Project Image" src={Experiences8} />
+                <img alt="Inventions of the new generation, Vocational education" src={Experiences8} />
               }
               className="card-project"
             >
@@ -180,7 +179,7 @@ function Experiences() {
           <Col span={24}>
             <Card
               cover={
-                <img alt="Tanapon Portfolio Project Image" src={Experiences5} />
+                <img alt="ABU ROBOCON 2019" src={Experiences5} />
               }
               className="card-project"
             >
@@ -209,7 +208,7 @@ function Experiences() {
           <Col span={24}>
             <Card
               cover={
-                <img alt="Tanapon Portfolio Project Image" src={Experiences6} />
+                <img alt="Sumo Robot" src={Experiences6} />
               }
               className="card-project"
             >
@@ -239,7 +238,7 @@ function Experiences() {
           <Col span={24}>
             <Card
               cover={
-                <img alt="Tanapon Portfolio Project Image" src={Experiences7} />
+                <img alt="Design circuits and build robots" src={Experiences7} />
               }
               className="card-project"
             >
@@ -270,41 +269,8 @@ function Experiences() {
           <Col span={24}>
             <Card
               cover={
-                <img alt="Tanapon Portfolio Project Image" src={Experiences9} />
-              }
-              className="card-project"
-            >
-              <div>
-                <div className="font-small">2018</div>
-                <div className="font-large font-bold">
-                  Self-Balancing Robot Using Gyro Sensor
-                </div>
-                <br />
-                <div
-                  style={{
-                    borderBottom: "1px solid #ddd",
-                    marginBottom: "10px",
-                  }}
-                ></div>
-                <div className="mb-3">
-                  <div className="mb-2 font-bold">Responsibilities</div>
-                  <ul>
-                    <li>Design circuits and build robots</li>
-                    <li>
-                      Write a control program that receives the gy-521 sensor
-                      values to find the error values. By controlling the
-                      operation of the wheels with PID.
-                    </li>
-                  </ul>
-                </div>
-              </div>
-            </Card>
-          </Col>
-          <Col span={24}>
-            <Card
-              cover={
                 <img
-                  alt="Tanapon Portfolio Project Image"
+                  alt="3D Printer (Voron 2.4)"
                   src={Experiences10}
                 />
               }

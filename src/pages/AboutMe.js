@@ -20,7 +20,7 @@ function AboutMe() {
               </h2>
               <p className="mb-2 indent-4">
                 Hello! I'm Tanapon Sakulphetaram (Boom), who started the journey into the world of {" "}
-                <span className="font-bold">development</span>. With a passion for coding and creating user-friendly interfaces. So I was keen to put my skills to use in the digital world.
+                <span className="font-bold">Developer</span>. With a passion for coding and creating user-friendly interfaces. So I was keen to put my skills to use in the digital world.
               </p>
               <p className="indent-4">
                 I'm interested in{" "}

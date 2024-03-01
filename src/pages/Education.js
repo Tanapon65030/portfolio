@@ -1,27 +1,47 @@
 import React from "react";
+import { useState } from "react";
 import Fade from "react-reveal/Fade";
 
-import { Button } from "antd";
-import { ArrowDownOutlined } from "@ant-design/icons";
+import { Button, Modal, Carousel } from "antd";
+import { EyeOutlined, DownloadOutlined} from "@ant-design/icons";
 
 import kmutnbLogo from "../assets/images/logo_kmutnb.png";
 import stcLogo from "../assets/images/logo_stc.png";
 import Resume from "../assets/images/Resume.pdf";
 import Transcript from "../assets/images/Transcript.pdf";
+import resumeImage from "../assets/images/resume-image.png";
+import TranscriptImage1 from "../assets/images/transcript_image_1.png";
+import TranscriptImage2 from "../assets/images/transcript_image_2.png";
 
 function Education() {
   const ResumeFileDownload = () => {
     const downloadLink = document.createElement("a");
     downloadLink.href = Resume;
-    downloadLink.download = "Resume.pdf";
+    downloadLink.download = "Resume Tanapon Sakulphetaram.pdf";
     downloadLink.click();
   };
 
   const TranscriptFileDownload = () => {
     const downloadLink = document.createElement("a");
     downloadLink.href = Transcript;
-    downloadLink.download = "Transcript.pdf";
+    downloadLink.download = "Transcript Tanapon Sakulphetaram.pdf";
     downloadLink.click();
+  };
+
+  const [resumeVisible, setResumeVisible] = useState(false);
+  const [transcriptVisible, setTranscriptVisible] = useState(false);
+
+  const showResumeModal = () => {
+    setResumeVisible(true);
+  };
+
+  const showTranscriptModal = () => {
+    setTranscriptVisible(true);
+  };
+
+  const handleCancel = () => {
+    setResumeVisible(false);
+    setTranscriptVisible(false);
   };
 
   return (
@@ -71,21 +91,59 @@ function Education() {
         <Button
           type="primary"
           shape="round"
-          icon={<ArrowDownOutlined />}
-          onClick={ResumeFileDownload}
+          icon={<EyeOutlined />}
+          onClick={showResumeModal}
           className="mr-3"
         >
-          Download Resume
+          Resume
         </Button>
+        <Modal
+          title="Resume Tanapon Sakulphetaram"
+          visible={resumeVisible}
+          onCancel={handleCancel}
+          footer={null}
+        >
+          <img src={resumeImage} alt="Resume" style={{ width: "100%" }} />
+          <div style={{ textAlign: "center", marginTop: "10px" }}>
+            <Button
+              type="primary"
+              icon={<DownloadOutlined />}
+              onClick={ResumeFileDownload}
+            >
+              Download Resume
+            </Button>
+          </div>
+        </Modal>
         &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
         <Button
           type="primary"
           shape="round"
-          icon={<ArrowDownOutlined />}
-          onClick={TranscriptFileDownload}
+          icon={<EyeOutlined />}
+          onClick={showTranscriptModal}
+          className="mr-3"
         >
-          Download Transcript
+          Transcript
         </Button>
+        <Modal
+          title="Transcript Tanapon Sakulphetaram"
+          visible={transcriptVisible}
+          onCancel={handleCancel}
+          footer={null}
+        >
+          <Carousel>
+            <img src={TranscriptImage1} alt="Transcript" style={{ width: "100%" }} />
+            <img src={TranscriptImage2} alt="Transcript" style={{ width: "100%" }} />
+          </Carousel>
+          <div style={{ textAlign: "center", marginTop: "10px" }}>
+            <Button
+              type="primary"
+              icon={<DownloadOutlined />}
+              onClick={TranscriptFileDownload}
+            >
+              Download Transcript
+            </Button>
+          </div>
+        </Modal>
       </div>
     </div>
   );
