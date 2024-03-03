@@ -11,8 +11,9 @@ import Experiences6 from "../assets/images/6.png";
 import Experiences7 from "../assets/images/7.png";
 import Experiences8 from "../assets/images/8.png";
 import Experiences10 from "../assets/images/10.png";
+import Experiences9 from "../assets/images/stargroupcomputer.png";
 
-import { Card} from "../components";
+import { Card } from "../components";
 
 function Experiences() {
   useEffect(() => {
@@ -48,7 +49,48 @@ function Experiences() {
           <Col span={24}>
             <Card
               cover={
-                <img alt="National Vocational Skills Competition" src={Experiences4} />
+                <img
+                  alt="Star Group Computer (it support)"
+                  src={Experiences9}
+                />
+              }
+              className="card-project"
+            >
+              <div>
+                <div className="font-small">2021</div>
+                <div className="font-large font-bold">
+                  Star Group Computer (it support)
+                </div>
+                <br />
+                <div
+                  style={{
+                    borderBottom: "1px solid #ddd",
+                    marginBottom: "10px",
+                  }}
+                ></div>
+                <div className="mb-3">
+                  <div className="mb-2 font-bold">Responsibilities</div>
+                  <ul>
+                    <li>
+                      Hardware takes care of the operation of the device
+                      Computer and copier parts.
+                    </li>
+                    <li>
+                      Software must take care of the computer's operating system
+                      and install related programs in government agencies.
+                    </li>
+                  </ul>
+                </div>
+              </div>
+            </Card>
+          </Col>
+          <Col span={24}>
+            <Card
+              cover={
+                <img
+                  alt="National Vocational Skills Competition"
+                  src={Experiences4}
+                />
               }
               className="card-project"
             >
@@ -68,11 +110,13 @@ function Experiences() {
                   <div className="mb-2 font-bold">Responsibilities</div>
                   <ul>
                     <li>
-                      It is a regional WIO Terminal microcontroller skill.
-                      Competition. Write code to connect to IoT and various
-                      sensors. with maximum efficiency and with minimal defects.
+                      It is a regional WIO Terminal microcontroller skill
+                      Competition Write code to connect to IoT and various
+                      sensors with maximum efficiency and with minimal defects.
                     </li>
-                    <li>Microcontroller Theory Exam and C/C++ Language Exam.</li>
+                    <li>
+                      Microcontroller Theory Exam and C/C++ Language Exam.
+                    </li>
                   </ul>
                 </div>
               </div>
@@ -81,7 +125,10 @@ function Experiences() {
           <Col span={24}>
             <Card
               cover={
-                <img alt="Regional Vocational Skills Competition1" src={Experiences2} />
+                <img
+                  alt="Regional Vocational Skills Competition1"
+                  src={Experiences2}
+                />
               }
               className="card-project"
             >
@@ -102,10 +149,12 @@ function Experiences() {
                   <ul>
                     <li>
                       It is a regional WIO Terminal microcontroller skills
-                      competition. Write code to solve problems efficiently and
+                      competition Write code to solve problems efficiently and
                       with minimal defects.
                     </li>
-                    <li>Microcontroller Theory Exam and C/C++ Language Exam.</li>
+                    <li>
+                      Microcontroller Theory Exam and C/C++ Language Exam.
+                    </li>
                   </ul>
                 </div>
               </div>
@@ -114,7 +163,10 @@ function Experiences() {
           <Col span={24}>
             <Card
               cover={
-                <img alt="Regional Vocational Skills Competition2" src={Experiences3} />
+                <img
+                  alt="Regional Vocational Skills Competition2"
+                  src={Experiences3}
+                />
               }
               className="card-project"
             >
@@ -135,10 +187,12 @@ function Experiences() {
                   <ul>
                     <li>
                       It is a regional level M5stack microcontroller skills
-                      competition. Write code to solve problems efficiently and
+                      competition Write code to solve problems efficiently and
                       with minimal defects.
                     </li>
-                    <li>Microcontroller Theory Exam and C/C++ Language Exam.</li>
+                    <li>
+                      Microcontroller Theory Exam and C/C++ Language Exam.
+                    </li>
                   </ul>
                 </div>
               </div>
@@ -147,7 +201,10 @@ function Experiences() {
           <Col span={24}>
             <Card
               cover={
-                <img alt="Inventions of the new generation, Vocational education" src={Experiences8} />
+                <img
+                  alt="Inventions of the new generation, Vocational education"
+                  src={Experiences8}
+                />
               }
               className="card-project"
             >
@@ -178,9 +235,7 @@ function Experiences() {
           </Col>
           <Col span={24}>
             <Card
-              cover={
-                <img alt="ABU ROBOCON 2019" src={Experiences5} />
-              }
+              cover={<img alt="ABU ROBOCON 2019" src={Experiences5} />}
               className="card-project"
             >
               <div>
@@ -207,9 +262,7 @@ function Experiences() {
           </Col>
           <Col span={24}>
             <Card
-              cover={
-                <img alt="Sumo Robot" src={Experiences6} />
-              }
+              cover={<img alt="Sumo Robot" src={Experiences6} />}
               className="card-project"
             >
               <div>
@@ -238,7 +291,10 @@ function Experiences() {
           <Col span={24}>
             <Card
               cover={
-                <img alt="Design circuits and build robots" src={Experiences7} />
+                <img
+                  alt="Design circuits and build robots"
+                  src={Experiences7}
+                />
               }
               className="card-project"
             >
@@ -258,7 +314,7 @@ function Experiences() {
                     <li>Design circuits and build robots</li>
                     <li>
                       Write a control program that receives the values of 4
-                      sensors to find the error values. By controlling the
+                      sensors to find the error values By controlling the
                       operation of the wheels with PID.
                     </li>
                   </ul>
@@ -268,12 +324,7 @@ function Experiences() {
           </Col>
           <Col span={24}>
             <Card
-              cover={
-                <img
-                  alt="3D Printer (Voron 2.4)"
-                  src={Experiences10}
-                />
-              }
+              cover={<img alt="3D Printer (Voron 2.4)" src={Experiences10} />}
               className="card-project"
             >
               <div>
@@ -295,7 +346,10 @@ function Experiences() {
                       Install the program to connect to the Raspberry Pi and
                       control the printer through the website.
                     </li>
-                    <li>Assemble the printer and fine-tune it to find the best settings.</li>
+                    <li>
+                      Assemble the printer and fine-tune it to find the best
+                      settings.
+                    </li>
                   </ul>
                 </div>
               </div>

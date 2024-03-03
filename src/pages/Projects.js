@@ -44,12 +44,13 @@ function Projects() {
           <Col xs={24} sm={24} md={24} lg={12}>
             <Card
               cover={
-                <img alt="Tanapon Portfolio Project Image" src={portfolioImg} />
+                <img alt="Tanapon Portfolio" src={portfolioImg} />
               }
               actions={[
                 <a
                   href="https://github.com/Tanapon65030/portfolio"
                   target="_blank"
+                  rel="noreferrer"
                 >
                   <GithubOutlined key="github" />
                 </a>,
@@ -68,7 +69,7 @@ function Projects() {
                 <div className="font-title font-bold">Portfolio</div>
                 <div className="mt-1 font-small">
                   &nbsp; Web Portfolio React.js is a project in the SELECTED
-                  TOPIC IN COMPUTER class. Learn about React.js, Node.js, github
+                  TOPIC IN COMPUTER class Learn about React.js, Node.js, github
                   desktop.
                 </div>
               </div>
@@ -82,6 +83,7 @@ function Projects() {
                   <a
                     href="https://food-application-85697.web.app"
                     target="_blank"
+                    rel="noreferrer"
                   >
                     <LoginOutlined key="demo-link" />
                   </a>
@@ -108,12 +110,13 @@ function Projects() {
           <Col xs={24} sm={24} md={24} lg={12}>
           <Card
               cover={
-                <img alt="Tanapon Portfolio Project Image" src={td} />
+                <img alt="Filament Production" src={td} />
               }
               actions={[
                 <a
                   href="https://github.com/Tanapon65030/Filament-Production-Machine-for-3D-Printing.git"
                   target="_blank"
+                  rel="noreferrer"
                 >
                   <GithubOutlined key="github" />
                 </a>,
@@ -132,8 +135,8 @@ function Projects() {
                 </div>
                 <div className="mt-1 font-small">
                   &nbsp; It is a project that uses Microcontroller ESP32
-                  connects to sensors to work together automatically. and
-                  control the temperature as well PID control
+                  connects to sensors to work together automatically and
+                  control the temperature as well PID control.
                 </div>
               </div>
             </Card>
